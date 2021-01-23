@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Todo List</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome back <span id="name" contenteditable="true"></span>!</h1>
+    </header>
+    <div class="container">
+      <form id="todo-form" action="app.js">
+        <label for="todo-input">Please enter your task :</label>
+        <div class="error hidden">Can't add a blank or todo!</div>
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="80 caracters max"
+          autofocus
+          required
+        />
+        <button type="submit" id="submit-btn">Save your task</button>
+      </form>
+      <section class="todo-list">
+        <h2>Your list :</h2>
+        <ul id="todo-ul"></ul>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

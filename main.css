@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+html{
+height: 100%;
+}
+
+body {
+    height: 100%;
+  background: linear-gradient(rgb(53,235,172), rgb(93,160,200));
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+header {
+  padding: 1.3em;
+  text-align: center;
+  background-color: rgb(240, 162, 46);
+  margin-bottom: 1em;
+  border-bottom: 1px solid black;
+  box-shadow: 0 5px 20px lightgray ;
+}
+
+header h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.container {
+  width: 80vw;
+  height: 100%;
+  margin: auto;
+}
+
+#todo-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+label,
+input,
+#submit-btn {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+#submit-btn {
+  width: 20%;
+  margin: auto;
+}
+
+.todo-list ul {
+  width: 100%;
+  list-style-type: none;
+  font-size: 1.4em;
+}
+
+.todo-element {
+  border: 1px solid black;
+  background-color: rgb(236, 240, 10);
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.btn {
+  margin: 0px 0px;
+  padding: 5px;
+  border: none;
+}
+
+.check-btn {
+  background-color: seagreen;
+}
+
+.delete-btn {
+  background-color: red;
+}
+
+.icon-img {
+  height: 20px;
+  width: 20px;
+}
+
+.error {
+  display: inline;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.hidden {
+  display: none;
+}
+
+.checked{
+    text-decoration: line-through;
+    background-color: lightgreen;
+}
+
+#submit-btn,
+.btn{
+    cursor: pointer;
+}
